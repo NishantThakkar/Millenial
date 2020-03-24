@@ -1,0 +1,147 @@
+2020-03-23T00:34:06.4963181+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-23T00:34:06.5975638+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-23T00:34:06.5994830+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-23T15:21:21.8241660+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-23T15:21:21.8367958+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-23T15:21:21.8390134+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-23T17:12:18.5917754+05:30 80000002-0003-ff00-b63f-84710c7967bb [ERR] An exception occurred while iterating over the results of a query for context type '"Millennial.DB.ECommerceDemoContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:481faf90-bdc8-43ed-a826-9e0335ccb0db
+Error Number:10742,State:1,Class:15" (f5c7ac34)
+Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetList(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 31
+   at Millennial.API.Controllers.ProductController.Get(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 31
+ClientConnectionId:481faf90-bdc8-43ed-a826-9e0335ccb0db
+Error Number:10742,State:1,Class:15
+2020-03-23T17:12:31.1447231+05:30 80000002-0003-ff00-b63f-84710c7967bb [ERR] The offset specified in a OFFSET clause may not be negative. (a466f7bc)
+Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetList(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 31
+   at Millennial.API.Controllers.ProductController.Get(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 31
+ClientConnectionId:481faf90-bdc8-43ed-a826-9e0335ccb0db
+Error Number:10742,State:1,Class:15
+2020-03-23T19:54:02.6068201+05:30 80000004-0003-ff00-b63f-84710c7967bb [ERR] An exception occurred while iterating over the results of a query for context type '"Millennial.DB.ECommerceDemoContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:10d66354-7980-4d2b-b71b-926dabf01295
+Error Number:10742,State:1,Class:15" (f5c7ac34)
+Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetList(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 31
+   at Millennial.API.Controllers.ProductController.Get(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 31
+ClientConnectionId:10d66354-7980-4d2b-b71b-926dabf01295
+Error Number:10742,State:1,Class:15
+2020-03-23T19:54:07.3462299+05:30 80000003-0001-ff00-b63f-84710c7967bb [ERR] An exception occurred while iterating over the results of a query for context type '"Millennial.DB.ECommerceDemoContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:e82f462f-b8df-4134-b271-68c86e1dfb7c
+Error Number:10742,State:1,Class:15" (f5c7ac34)
+Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetList(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 31
+   at Millennial.API.Controllers.ProductController.Get(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 31
+ClientConnectionId:e82f462f-b8df-4134-b271-68c86e1dfb7c
+Error Number:10742,State:1,Class:15
+2020-03-23T19:54:08.4962339+05:30 80000003-0001-ff00-b63f-84710c7967bb [ERR] The offset specified in a OFFSET clause may not be negative. (a466f7bc)
+Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetList(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 31
+   at Millennial.API.Controllers.ProductController.Get(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 31
+ClientConnectionId:e82f462f-b8df-4134-b271-68c86e1dfb7c
+Error Number:10742,State:1,Class:15
+2020-03-23T19:54:08.6213200+05:30 80000004-0003-ff00-b63f-84710c7967bb [ERR] The offset specified in a OFFSET clause may not be negative. (a466f7bc)
+Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetList(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 31
+   at Millennial.API.Controllers.ProductController.Get(Int32 page, Int32 take) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 31
+ClientConnectionId:10d66354-7980-4d2b-b71b-926dabf01295
+Error Number:10742,State:1,Class:15
+2020-03-23T21:12:08.6160398+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-23T21:12:08.6316000+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-23T21:12:08.6353725+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)

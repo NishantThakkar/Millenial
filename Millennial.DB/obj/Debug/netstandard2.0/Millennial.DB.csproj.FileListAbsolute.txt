@@ -1,0 +1,8 @@
+F:\Contradoo\Millennial\Millennial.DB\bin\Debug\netstandard2.0\Millennial.DB.deps.json
+F:\Contradoo\Millennial\Millennial.DB\bin\Debug\netstandard2.0\Millennial.DB.dll
+F:\Contradoo\Millennial\Millennial.DB\bin\Debug\netstandard2.0\Millennial.DB.pdb
+F:\Contradoo\Millennial\Millennial.DB\obj\Debug\netstandard2.0\Millennial.DB.csprojAssemblyReference.cache
+F:\Contradoo\Millennial\Millennial.DB\obj\Debug\netstandard2.0\Millennial.DB.AssemblyInfoInputs.cache
+F:\Contradoo\Millennial\Millennial.DB\obj\Debug\netstandard2.0\Millennial.DB.AssemblyInfo.cs
+F:\Contradoo\Millennial\Millennial.DB\obj\Debug\netstandard2.0\Millennial.DB.dll
+F:\Contradoo\Millennial\Millennial.DB\obj\Debug\netstandard2.0\Millennial.DB.pdb

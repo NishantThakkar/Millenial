@@ -1,0 +1,11 @@
+F:\Contradoo\Millennial\Millennial.Core\bin\Debug\netstandard2.0\Millennial.Core.deps.json
+F:\Contradoo\Millennial\Millennial.Core\bin\Debug\netstandard2.0\Millennial.Core.dll
+F:\Contradoo\Millennial\Millennial.Core\bin\Debug\netstandard2.0\Millennial.Core.pdb
+F:\Contradoo\Millennial\Millennial.Core\bin\Debug\netstandard2.0\Millennial.DB.dll
+F:\Contradoo\Millennial\Millennial.Core\bin\Debug\netstandard2.0\Millennial.DB.pdb
+F:\Contradoo\Millennial\Millennial.Core\obj\Debug\netstandard2.0\Millennial.Core.csprojAssemblyReference.cache
+F:\Contradoo\Millennial\Millennial.Core\obj\Debug\netstandard2.0\Millennial.Core.AssemblyInfoInputs.cache
+F:\Contradoo\Millennial\Millennial.Core\obj\Debug\netstandard2.0\Millennial.Core.AssemblyInfo.cs
+F:\Contradoo\Millennial\Millennial.Core\obj\Debug\netstandard2.0\Millennial.Core.csproj.CopyComplete
+F:\Contradoo\Millennial\Millennial.Core\obj\Debug\netstandard2.0\Millennial.Core.dll
+F:\Contradoo\Millennial\Millennial.Core\obj\Debug\netstandard2.0\Millennial.Core.pdb
