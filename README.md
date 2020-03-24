@@ -13,7 +13,8 @@ The project is divided in two Parts.
 **appsettings.json**\
 File Path: The log directory path\
 MillennialConnectionString: Connestion string of the database\
-AllowedHosts: URL of client side application, for CORS
+**StartUp.cs**
+CORS setup: URL of client side application
 #### Millenial.DB
 If Entity Framework related error occurs, latest version of .Net Core can be downloaded from below url 
 https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=3.1.2&arch=x64&rid=win10-x64
