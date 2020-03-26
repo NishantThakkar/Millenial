@@ -5,6 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using Microsoft.EntityFrameworkCore.Query;
+using Microsoft.EntityFrameworkCore;
+
 namespace Millennial.Core.Repository.Implementation
 {
     public class ProductService : BaseService<Product, long>, IProductService
@@ -19,7 +22,11 @@ namespace Millennial.Core.Repository.Implementation
         {
             int count = 0;
             var skip = page * take;
-            sortBy = sortBy.Replace(sortBy.Substring(0, 1), sortBy.Substring(0, 1).ToUpper());
+            take = take * (page + 1);
+            if (!string.IsNullOrEmpty(sortBy))
+            {
+                sortBy = sortBy.Replace(sortBy.Substring(0, 1), sortBy.Substring(0, 1).ToUpper());
+            }
             var productsQuery = _productRepository.GetList(skip, take, sortBy , sortDirection, search, ref count);
             var productsViewModel = from n in productsQuery
                                     select new ProductViewModel()
@@ -36,6 +43,12 @@ namespace Millennial.Core.Repository.Implementation
                 Products = products
             };
         }
+        public override Product GetById(long Id)
+        {
+            var query = GetByPredicate(x => x.ProductId == Id).Include(x => x.ProductAttributes).Include(x => x.ProductCategory);
+            return query.Single();
+        }
+
     }
 }
 

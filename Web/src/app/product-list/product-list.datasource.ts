@@ -24,15 +24,17 @@ export class ProductDataSource extends DataSource<ProductViewModel> {
         this.countSubject.complete();
         this.loadingSubject.complete();
     }
-    loadProducts(pageIndex: number, pageSize: number, sortBy: string, sortDirection: SortDirection, search: string){
-        this.loadingSubject.next(true);
+    loadProducts(pageIndex: number, pageSize: number, sortBy: string, sortDirection: SortDirection, search: string | null){
+      if (sortBy == undefined) {
+        sortBy = '';
+      }
+      this.loadingSubject.next(true);
 
         return this.productService.getProducts(pageSize , pageIndex,sortBy,sortDirection,search)
         .pipe(
             catchError(() => of([])),
             finalize(() => this.loadingSubject.next(false))
-         )
-         // subscribe method to receive Observable type data when it is ready
+         )         
          .subscribe((result : ProductList) => {
             this.productsSubject.next(result.products);
             this.countSubject.next(result.count);

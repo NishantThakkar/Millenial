@@ -1,7 +1,10 @@
-﻿using Millennial.Core.Repository.Interface;
+﻿using Microsoft.EntityFrameworkCore.Query;
+using Millennial.Core.Repository.Interface;
 using Millennial.Core.Service.Interface;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Millennial.Core.Repository.Implementation
@@ -13,24 +16,34 @@ namespace Millennial.Core.Repository.Implementation
         {
             _baseRepository = baseRepository;
         }
-        public void Add(T t)
+        public virtual void Add(T t)
         {
             _baseRepository.Add(t);
         }
 
-        public T GetById(P Id)
+        public virtual T GetById(P Id)
         {
             return _baseRepository.GetById(Id);
         }
 
-        public void Remove(P Id)
+        public IQueryable<T> GetByPredicate(Expression<Func<T, bool>> filter)
+        {
+            return _baseRepository.GetByPredicate(filter);
+        }
+
+        public virtual void Remove(P Id)
         {
             _baseRepository.Remove(Id);
         }
 
-        public int Save()
+        public virtual int Save()
         {
             return _baseRepository.Save();
+        }
+
+        public virtual void Update(T t)
+        {
+            _baseRepository.Update(t);
         }
     }
 }

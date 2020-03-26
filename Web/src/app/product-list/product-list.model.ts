@@ -8,7 +8,3 @@ export class ProductList{
   products: ProductViewModel[];
   count: number;
 }
-// export enum SortDirection{
-//   ASC = 0,
-//   DESC = 1
-// }

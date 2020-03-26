@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import {FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
@@ -14,6 +15,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { ErrorInterceptor } from './error.interceptor';
 
 @NgModule({
   declarations: [
@@ -32,12 +34,21 @@ import { MatInputModule } from '@angular/material/input';
     MatSortModule,
     MatProgressSpinnerModule,
     MatFormFieldModule,
-    MatInputModule 
+    MatInputModule ,
+    ToastrModule.forRoot()
   ],
   exports:[
     
   ],
-  providers: [],
+  providers: [{
+
+    provide: HTTP_INTERCEPTORS,
+
+    useClass: ErrorInterceptor,
+
+    multi: true
+
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,55 @@
+2020-03-26T15:46:43.6549190+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-26T15:46:43.6698578+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-26T15:46:43.6772300+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-26T15:48:22.6519472+05:30 80000002-0002-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Text.Json.JsonException: A possible object cycle was detected which is not supported. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.JsonSerializer.Write(Utf8JsonWriter writer, Int32 originalWriterDepth, Int32 flushThreshold, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore(Stream utf8Json, Object value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|27_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-03-26T15:59:08.9376924+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-26T15:59:08.9500637+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-26T15:59:08.9532481+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-26T16:05:12.2797674+05:30 80000006-0002-ff00-b63f-84710c7967bb [ERR] Sequence contains no elements (a4b4a0b6)
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetById(Int64 Id) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 49
+   at Millennial.API.Controllers.ProductController.Get(Int64 id) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 48
+2020-03-26T16:05:20.1452495+05:30 80000004-0001-ff00-b63f-84710c7967bb [ERR] Sequence contains no elements (a4b4a0b6)
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetById(Int64 Id) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 49
+   at Millennial.API.Controllers.ProductController.Get(Int64 id) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 48
+2020-03-26T16:10:05.8501434+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-26T16:10:05.8681747+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-26T16:10:05.8704304+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-26T16:10:39.5416635+05:30 80000006-0003-fd00-b63f-84710c7967bb [ERR] Sequence contains no elements (a4b4a0b6)
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Single[TSource](IQueryable`1 source)
+   at Millennial.Core.Repository.Implementation.ProductService.GetById(Int64 Id) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 49
+   at Millennial.API.Controllers.ProductController.Get(Int64 id) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 48
+2020-03-26T16:42:41.9533771+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-26T16:42:41.9708393+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-26T16:42:41.9710830+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-26T16:43:17.1307987+05:30  [INF] Application is shutting down... (90f52c38)

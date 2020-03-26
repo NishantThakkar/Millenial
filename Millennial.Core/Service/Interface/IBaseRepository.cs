@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Query;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Millennial.Core.Service.Interface
@@ -10,5 +13,7 @@ namespace Millennial.Core.Service.Interface
         int Save();
         T GetById(P Id);
         void Remove(P Id);
+        void Update(T t);
+        IQueryable<T> GetByPredicate(Expression<Func<T, bool>> filter);
     }
 }

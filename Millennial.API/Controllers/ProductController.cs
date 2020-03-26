@@ -41,9 +41,23 @@ namespace Millennial.API.Controllers
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult Get(long id)
         {
-            return "value";
+            try
+            {
+                var product = _productService.GetById(id);
+                return Ok(product);
+            }
+            catch (InvalidOperationException ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                return NotFound(id);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                return StatusCode(500, new { Id = id });
+            }            
         }
 
         // POST api/<controller>
@@ -70,15 +84,26 @@ namespace Millennial.API.Controllers
         }
 
         // PUT api/<controller>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        public ActionResult Put([FromBody]Product product)
         {
+            try
+            {   
+                _productService.Update(product);
+                _productService.Save();
+                return Ok(product);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                return StatusCode(500, product);
+            }
         }
 
-        // DELETE api/<controller>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/<controller>/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

@@ -7,3 +7,24 @@
 2020-03-24T13:28:10.0829195+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
 2020-03-24T13:28:10.1283511+05:30  [INF] Hosting environment: "Development" (c3307c92)
 2020-03-24T13:28:10.1305478+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-24T19:10:05.8085662+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-24T19:10:05.8879884+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-24T19:10:05.8883564+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-24T19:10:24.2731044+05:30  [INF] Application is shutting down... (90f52c38)
+2020-03-24T19:11:45.7369154+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-24T19:11:45.7582382+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-24T19:11:45.7615496+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-24T19:13:15.0630597+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-24T19:13:15.0836116+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-24T19:13:15.0901378+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)
+2020-03-24T20:20:53.1303952+05:30 80000010-0001-fe00-b63f-84710c7967bb [ERR] Object reference not set to an instance of an object. (f59a5554)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Millennial.Core.Repository.Implementation.ProductService.GetList(Int32 page, Int32 take, String sortBy, String sortDirection, String search) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 22
+   at Millennial.API.Controllers.ProductController.Get(Int32 page, Int32 take, String sortBy, String sortDirection, String search) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 31
+2020-03-24T20:20:53.1304007+05:30 80000014-0003-fd00-b63f-84710c7967bb [ERR] Object reference not set to an instance of an object. (f59a5554)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Millennial.Core.Repository.Implementation.ProductService.GetList(Int32 page, Int32 take, String sortBy, String sortDirection, String search) in F:\Contradoo\Millennial\Millennial.Core\Repository\Implementation\ProductService.cs:line 22
+   at Millennial.API.Controllers.ProductController.Get(Int32 page, Int32 take, String sortBy, String sortDirection, String search) in F:\Contradoo\Millennial\Millennial.API\Controllers\ProductController.cs:line 31
+2020-03-24T20:29:57.4134054+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-03-24T20:29:57.4718764+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2020-03-24T20:29:57.4743158+05:30  [INF] Content root path: "F:\Contradoo\Millennial\Millennial.API" (b5d60022)

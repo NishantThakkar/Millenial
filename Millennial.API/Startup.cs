@@ -18,6 +18,7 @@ using Millennial.Core.Repository.Implementation;
 using Millennial.Core.Service.Interface;
 using Millennial.Core.Service.Implementation;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 
 namespace Millennial.API
 {
@@ -41,7 +42,10 @@ namespace Millennial.API
                     builder.WithOrigins("http://localhost:4200");
                 });
             });
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(o =>
+            {
+                o.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            });
             services.AddDbContext<ECommerceDemoContext>(context => context.UseSqlServer(Configuration.GetConnectionString("MillennialConnectionString"), b => b.MigrationsAssembly("Millennial.API")));
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductRepository, ProductRepository>();

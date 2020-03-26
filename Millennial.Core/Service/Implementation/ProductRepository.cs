@@ -17,8 +17,12 @@ namespace Millennial.Core.Service.Implementation
         }
 
         public IQueryable<Product> GetList(int skip, int take,  string sortBy, string sortDirection, string search, ref int count)
-        {   
-            var products = _context.Products.Include(x => x.ProductCategory).Take(take).Skip(skip);
+        {
+            var products = _context.Products.Include(x => x.ProductCategory).AsQueryable();
+            if (!string.IsNullOrEmpty(search))
+            {
+                products = products.Where(x => x.ProdName.StartsWith(search) || x.ProductCategory.CategoryName.StartsWith(search) || x.ProdDescription.Contains(search));
+            }
             switch (sortBy)
             {
                 case "ProdName":
@@ -31,12 +35,8 @@ namespace Millennial.Core.Service.Implementation
                     products = products.OrderBy(x => x.ProdName);
                     break;
             }
-            if (!string.IsNullOrEmpty(search))
-            {
-                products = products.Where(x => x.ProdName.StartsWith(search) || x.ProductCategory.CategoryName.StartsWith(search) || x.ProdDescription.Contains(search));
-            }
-            
-            count = _context.Products.Count();
+            count = products.Count();
+            products = products.Take(take).Skip(skip);
             return products;
         }
     }
