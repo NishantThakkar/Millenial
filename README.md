@@ -28,7 +28,7 @@ https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_v
 ## Client Side:
 **Tools and Technology:** Visual Studion Code, Angular 9, Angular CLI, Material Design\
 **System Requirement:** angular cli: >= 9.0.7 node >= V12.16.0 npm: >= 6.14.3\
-**Run:** Go to **Web** directory and fire **ng serve** in command prompt
+**Run:** Go to **Web** directory and fire **npm install** and then **ng serve** in command prompt
 ### Features
 1. Error handler
 2. Material List 
