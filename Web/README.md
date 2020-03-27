@@ -1,11 +1,10 @@
 # Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
-https://stackblitz.com/edit/angular-material-card-horizontal?file=app%2Fapp.component.html
+This project is generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` for the installations and `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically redirects to /products
 
 ## Code scaffolding
 
@@ -23,15 +22,13 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## References
 https://stackblitz.com/edit/angular-material-card-horizontal?file=app%2Fapp.component.html
 https://github.com/angular/flex-layout
-
 https://stackoverflow.com/questions/53402137/angular-material-styles-not-being-applied-correctly/53402493
-
 https://stackblitz.com/edit/mat-paginator-with-cards?file=app%2Fapp.component.html
 https://material.angular.io/components/paginator/overview
-
 https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.1
 
+## Further help
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
