@@ -23,11 +23,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## References
-https://stackblitz.com/edit/angular-material-card-horizontal?file=app%2Fapp.component.html
-https://github.com/angular/flex-layout
-https://stackoverflow.com/questions/53402137/angular-material-styles-not-being-applied-correctly/53402493
-https://stackblitz.com/edit/mat-paginator-with-cards?file=app%2Fapp.component.html
-https://material.angular.io/components/paginator/overview
+https://stackblitz.com/edit/angular-material-card-horizontal?file=app%2Fapp.component.html \
+https://github.com/angular/flex-layout \
+https://stackoverflow.com/questions/53402137/angular-material-styles-not-being-applied-correctly/53402493 \
+https://stackblitz.com/edit/mat-paginator-with-cards?file=app%2Fapp.component.html \
+https://material.angular.io/components/paginator/overview \
 https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.1
 
 ## Further help
